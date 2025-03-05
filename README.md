@@ -12,7 +12,7 @@ The Sqlite DB contains three core tables:
 
 A CSV file containing data of new employees is stored in the `/data` folder.
 
-The ETL pipeline is used to load this CSV source data into **employee_detail** via a staging table **employee_detail_stg**, after which the **employee_base** table is loaded by running a SQL query, which appends the resultant data to it.
+The ETL pipeline is used to load this CSV source data into **employee_detail** via a staging table **employee_detail_stg**, after which the **employee_base** table is loaded by running a SQL query, which appends the resultant data to the core table.
 
 ### Diagram
 ![Overview diagram](assets/airflow_sqlite_diagram.png)
