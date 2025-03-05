@@ -1,0 +1,7 @@
+sqlite_conn_id: sqlite_conn
+csv_path: "/home/<your_username>/airflow/dags/data/employee_raw.csv"
+insert_data_sql: "sql/load_employee_base_tbl.sql"
+truncate_sql: "sql/truncate_tbl.sql"
+load_sql: "sql/load_employee_detail.sql"
+count_query: "SELECT COUNT(*) FROM employee_detail_stg;"
+stg_tbl: "employee_detail_stg"
