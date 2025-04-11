@@ -1,4 +1,4 @@
-# Audit DAG, invokes other DAG
+# Audit DAG, invokes ETL DAG
 import os
 import yaml
 import pandas as pd
