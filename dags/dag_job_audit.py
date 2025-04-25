@@ -68,7 +68,5 @@ with DAG(
         sql=END_SQL,
     )
 
-
     # Modify dependencies
     start_pipeline >> Label('Create new Job entry') >> start_job >> Label('Trigger ETL Dag') >> trig_dag_employee_base >> Label('Update Job run details') >> end_job >> end_pipeline
-
